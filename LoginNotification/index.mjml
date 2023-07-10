@@ -191,30 +191,7 @@
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer -->
-      <mj-section css-class="section" padding-top="0px">
-        <mj-column>
-          <mj-text
-            css-class="text-secondary"
-            font-size="14px"
-            line-height="20px"
-            font-weight="regular"
-            color="#5C6F82"
-            padding="0px"
-          >
-            <p>
-              <strong>
-                Non rispondere a questo indirizzo email: è utilizzato solo per
-                l'invio di questa comunicazione e, non essendo monitorato, non
-                riceveresti risposta.
-              </strong>
-            </p>
-            <p>
-              Ricevi questa comunicazione per verificare che l’accesso su IO sia
-              stato eseguito da te.
-            </p>
-          </mj-text>
-        </mj-column>
-      </mj-section>
+      <mj-include path="../partials/footer-login-notification.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
