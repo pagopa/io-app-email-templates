@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>È stato eseguito l’accesso su app IO</mj-title>
+    <mj-title>Nuovo accesso a IO</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -34,7 +34,7 @@
           >
             <!-- H4 Desktop (from MUI Italia)-->
             <h1 style="font-size: 32px; line-height: 36px; margin: 0">
-              È stato eseguito l’accesso su app IO
+              Nuovo accesso a IO
             </h1>
           </mj-text>
           <mj-text
@@ -52,10 +52,10 @@
             <!-- Body 1 Desktop (from MUI Italia)-->
             <p>
               Ciao ${name}, <br />
-              ti informiamo che è stato appena eseguito l’accesso su app IO con
-              la tua identità digitale, se non sei stato tu
+              hai appena eseguito l'accesso all'app IO con la tua identità digitale.<br />
+              Non eri tu?
               <a href="${helpdeskRef}" style="color: #0073e6" class="link"
-                >contatta l’assistenza clienti.</a
+                >Contatta l’assistenza clienti.</a
               >
             </p>
             <br />
