@@ -1,0 +1,250 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>Nuovo accesso a IO</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- App IO Logo -->
+      <mj-include path="../partials/main-logo.mjml" />
+      <mj-section css-class="section" padding="0px" padding-bottom="8px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            padding-top="24px"
+            padding-bottom="8px"
+            padding-left="0px"
+            padding-right="0px"
+            color="#17324D"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 36px; margin: 0">
+              Nuovo accesso a IO
+            </h1>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <!-- Body 1 Desktop (from MUI Italia)-->
+            <p>
+              Ciao ${name}, <br />
+              hai appena eseguito l'accesso all'app IO con la tua identità
+              digitale.<br />
+              Non eri tu? Per mantenere i tuoi dati al sicuro,
+              <a href="${magicLinkRef}" style="color: #0073e6" class="link"
+                >blocca l'accesso</a
+              >
+            </p>
+            <br />
+            <p>Dati di accesso:</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section
+        css-class="message-preview"
+        padding="24px"
+        text-align="left"
+        border-radius="8px"
+        background-color="#FAFAFA"
+      >
+        <mj-column>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            font-weight="bold"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            Identity Provider
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            ${identity_provider}
+          </mj-text>
+          <mj-divider
+            border-width="1px"
+            padding-top="16px"
+            padding-left="0px"
+            padding-right="0px"
+            padding-bottom="16px"
+            css-class="divider"
+            border-color="#E3E7EB"
+          />
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            font-weight="bold"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            Data e ora
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            ${date_time}
+          </mj-text>
+          <mj-divider
+            border-width="1px"
+            padding-top="16px"
+            padding-left="0px"
+            padding-right="0px"
+            padding-bottom="16px"
+            css-class="divider"
+            border-color="#E3E7EB"
+          />
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            font-weight="bold"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            Indirizzo IP
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            ${ip_address}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="section" padding="0px">
+        <mj-column>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <p style="margin-top: 0px">
+              <br />
+              A presto,<br aria-hidden="true" />il team di PagoPA S.p.A.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="section" padding="0px">
+        <mj-column>
+          <mj-divider
+            border-width="1px"
+            padding-top="24px"
+            padding-left="0px"
+            padding-right="0px"
+            padding-bottom="24px"
+            css-class="divider"
+            border-color="#E3E7EB"
+          />
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <p
+              style="
+                margin-top: 0px;
+                color: var(--text-secondary, #5c6f82);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Typography/Caption regular */
+                font-family: Titillium Web;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+              "
+            >
+              <br />
+              Ricevi questa comunicazione per verificare che l’accesso su IO sia
+              stato eseguito da te.
+            </p>
+            <p
+              style="
+                color: var(--text-secondary, #5c6f82);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Typography/Caption semibold */
+                font-family: Titillium Web;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px; /* 142.857% */
+              "
+            >
+              Non rispondere a questo indirizzo email: è utilizzato solo per
+              l'invio di questa comunicazione e, non essendo monitorato, non
+              riceveresti risposta.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer -->
+      <mj-include path="../partials/footer-login-notification.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
