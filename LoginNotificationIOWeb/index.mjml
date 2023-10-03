@@ -69,7 +69,6 @@
         padding="24px"
         text-align="left"
         border-radius="8px"
-        background-color="#FAFAFA"
       >
         <mj-column>
           <mj-text
