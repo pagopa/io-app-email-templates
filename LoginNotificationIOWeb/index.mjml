@@ -142,7 +142,7 @@
             color="#17324D"
             padding="0"
           >
-            Dispositivo
+            Indirizzo IP
           </mj-text>
           <mj-text
             css-class="text"
@@ -153,7 +153,7 @@
             color="#17324D"
             padding="0"
           >
-            ${device_model}
+            ${ip_address}
           </mj-text>
         </mj-column>
       </mj-section>
