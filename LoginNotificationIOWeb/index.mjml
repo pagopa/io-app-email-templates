@@ -56,7 +56,7 @@
               digitale.<br />
               Non eri tu? Per mantenere i tuoi dati al sicuro,
               <a href="${magicLinkRef}" style="color: #0073e6" class="link"
-                >blocca l'accesso</a
+                >blocca l'accesso.</a
               >
             </p>
             <br />
