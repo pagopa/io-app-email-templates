@@ -52,7 +52,7 @@
             <!-- Body 1 Desktop (from MUI Italia)-->
             <p>
               Ciao ${name}, <br />
-              hai appena eseguito l'accesso all'app IO con la tua identità
+              hai appena effettuato l'accesso a IO con la tua identità
               digitale.<br />
               Non eri tu? Per mantenere i tuoi dati al sicuro,
               <a href="${magicLinkRef}" style="color: #0073e6" class="link"
