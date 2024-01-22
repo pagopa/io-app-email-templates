@@ -62,8 +62,11 @@
           >
             <!-- Body 1 Desktop (from MUI Italia)-->
             <p>
-              per abilitare alcune funzioni di app IO è necessario confermare il
-              tuo indirizzo email premendo sul tasto qui sotto.
+              premi il pulsante qui sotto per confermare il tuo indirizzo email e torna sull'app IO per
+              continuare a navigare!
+            </p>
+            <p>
+              Se non hai richiesto tu questa email, ignorala pure.
             </p>
           </mj-text>
           <mj-button
@@ -92,7 +95,7 @@
             padding="0px"
           >
             <p>
-              In alternativa, copia e incolla il seguente indirizzo in una nuova
+              Se hai problemi, copia e incolla il seguente indirizzo in una nuova
               scheda del browser:
               <a
                 href="https://verificaindirizzomail.io.italia.it/verifica?token=12345678910"
@@ -100,15 +103,6 @@
                 class="link"
                 >https://verificaindirizzomail.io.italia.it/verifica?token=12345678910</a
               >
-            </p>
-            <p>
-              Hai ricevuto questa email perché hai fatto l’accesso all’app IO
-              per la prima volta, o hai appena modificato l’indirizzo email
-              dalla sezione Profilo dell’app IO.
-            </p>
-            <p>
-              Se non hai effettuato tu queste azioni, ignora pure questo
-              messaggio.
             </p>
           </mj-text>
 
@@ -130,7 +124,7 @@
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer -->
-      <mj-include path="../partials/footer-generic.mjml" />
+      <mj-include path="../partials/footer-mail-validation.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>

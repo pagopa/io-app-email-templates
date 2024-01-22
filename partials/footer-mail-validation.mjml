@@ -1,0 +1,24 @@
+<mj-section css-class="section" padding-top="0px">
+  <mj-column>
+    <mj-text
+      css-class="text-secondary"
+      font-size="13px"
+      line-height="20px"
+      font-weight="regular"
+      color="#5C6F82"
+      padding="0px"
+    >
+      <p>
+        Ricevi questa comunicazione perché stai confermando l'indirizzo
+        email associato al tuo profilo su IO.
+      </p>
+      <p>
+        <strong>
+          Non rispondere a questo indirizzo email: è utilizzato solo per l'invio
+          di questa comunicazione e, non essendo monitorato, non riceveresti
+          risposta.
+        </strong>
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
