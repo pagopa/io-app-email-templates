@@ -83,7 +83,7 @@
             padding-left="0px"
             padding-right="0px"
           >
-            Conferma l'indirizzo email
+            Procedi con la conferma
           </mj-button>
           <mj-text
             css-class="text"

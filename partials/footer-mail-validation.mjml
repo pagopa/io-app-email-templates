@@ -2,7 +2,7 @@
   <mj-column>
     <mj-text
       css-class="text-secondary"
-      font-size="13px"
+      font-size="14px"
       line-height="20px"
       font-weight="regular"
       color="#5C6F82"
