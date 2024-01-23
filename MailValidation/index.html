@@ -313,7 +313,7 @@
                               <tr>
                                 <td align="left" class="title" style="font-size:0px;padding:10px 25px;padding-top:24px;padding-right:0px;padding-bottom:8px;padding-left:0px;word-break:break-word;">
                                   <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:13px;font-weight:bold;line-height:1;text-align:left;color:#17324D;"><!-- H4 Desktop (from MUI Italia)-->
-                                    <h1 style="font-size: 32px; line-height: 40px; margin: 0"> Conferma il tuo indirizzo email </h1>
+                                    <h1 style="font-size: 32px; line-height: 40px; margin: 0"> ${title} </h1>
                                   </div>
                                 </td>
                               </tr>
@@ -338,7 +338,7 @@
                                     <tbody>
                                       <tr>
                                         <td align="center" bgcolor="#0073E6" role="presentation" style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:14px 24px;background:#0073E6;" valign="middle">
-                                          <a href="#" style="display:inline-block;background:#0073E6;color:white;font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 24px;mso-padding-alt:0px;border-radius:4px;" target="_blank"> Procedi con la conferma </a>
+                                          <a href="${validationUrl}" style="display:inline-block;background:#0073E6;color:white;font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:14px 24px;mso-padding-alt:0px;border-radius:4px;" target="_blank"> Procedi con la conferma </a>
                                         </td>
                                       </tr>
                                     </tbody>
@@ -348,7 +348,7 @@
                               <tr>
                                 <td align="left" class="text" style="font-size:0px;padding:0px;word-break:break-word;">
                                   <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#17324D;">
-                                    <p> Se hai problemi, copia e incolla il seguente indirizzo in una nuova scheda del browser: <a href="https://verificaindirizzomail.io.italia.it/verifica?token=12345678910" style="color: #0073e6" class="link">https://verificaindirizzomail.io.italia.it/verifica?token=12345678910</a>
+                                    <p> Se hai problemi, copia e incolla il seguente indirizzo in una nuova scheda del browser: <a href="${validationUrl}" style="color: #0073e6" class="link">${validationUrl}</a>
                                     </p>
                                   </div>
                                 </td>

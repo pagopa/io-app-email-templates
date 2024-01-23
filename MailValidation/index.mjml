@@ -34,7 +34,7 @@
           >
             <!-- H4 Desktop (from MUI Italia)-->
             <h1 style="font-size: 32px; line-height: 40px; margin: 0">
-              Conferma il tuo indirizzo email
+              ${title}
             </h1>
           </mj-text>
           <mj-text
@@ -78,7 +78,7 @@
             align="left"
             inner-padding="14px 24px"
             border-radius="4px"
-            href="#"
+            href="${validationUrl}"
             css-class="cta"
             padding-left="0px"
             padding-right="0px"
@@ -98,10 +98,10 @@
               Se hai problemi, copia e incolla il seguente indirizzo in una nuova
               scheda del browser:
               <a
-                href="https://verificaindirizzomail.io.italia.it/verifica?token=12345678910"
+                href="${validationUrl}"
                 style="color: #0073e6"
                 class="link"
-                >https://verificaindirizzomail.io.italia.it/verifica?token=12345678910</a
+                >${validationUrl}</a
               >
             </p>
           </mj-text>
