@@ -52,7 +52,7 @@
             <!-- Body 1 Desktop (from MUI Italia)-->
             <p>
               Ciao ${name}, <br />
-              hai appena effettuato l'accesso a IO con la tua identità digitale.<br />
+              alle ${time} del ${date}, hai effettuato l'accesso a IO con la tua identità
               Non eri tu?
               <a href="${accessRef}" style="color: #0073e6" class="link"
                 >Accedi a IO dal web e blocca l'accesso.</a
