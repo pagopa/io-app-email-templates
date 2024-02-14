@@ -49,7 +49,7 @@
             padding-right="0px"
             color="#17324D"
           >
-            <p style="margin-bottom: 0px">Ciao,</p>
+            <p style="margin-bottom: 0px">Ciao ${name},</p>
           </mj-text>
           <mj-text
             css-class="text"
