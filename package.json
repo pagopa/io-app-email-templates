@@ -1,0 +1,19 @@
+{
+  "name": "@pagopa/io-app-email-templates",
+  "version": "0.0.1",
+  "description": "Common html template for email",
+  "repository": "https://github.com/pagopa/io-app-email-templates",
+  "author": "https://www.pagopa.gov.it",
+  "license": "MIT",
+  "scripts": {
+    "generate": "npm-run-all generate:*",
+    "generate:mailvalidation": "mjml MailValidation/index.mjml -o MailValidation/index.html",
+    "generate:login-notification": "mjml LoginNotification/index.mjml -o LoginNotification/index.html",
+    "generate:login-notification-with-link": "mjml LoginNotificationIOWeb/index.mjml -o LoginNotificationIOWeb/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mjml": "^4.13.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
