@@ -1,0 +1,17 @@
+.idea/
+node_modules/
+dist/
+generated/
+npm-debug.log
+yarn-error.log
+coverage
+.vscode
+.npmrc
+.env
+nohup.out
+
+# eslint section
+!.eslintrc.js
+.eslintcache
+
+nohup.out
