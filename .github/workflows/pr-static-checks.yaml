@@ -26,5 +26,8 @@ jobs:
       - id: build
         run: yarn build
 
+      - id: lint
+        run: yarn lint
+
       - id: test
         run: yarn test
