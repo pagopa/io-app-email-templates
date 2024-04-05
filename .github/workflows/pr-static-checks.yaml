@@ -29,5 +29,8 @@ jobs:
       - id: lint
         run: yarn lint
 
+      - id: check-templates
+        run: yarn generate && [[ -z $(git status --porcelain) ]] && exit 0 || git diff && exit 1
+
       - id: test
         run: yarn test
