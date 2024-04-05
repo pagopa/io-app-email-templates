@@ -11,7 +11,7 @@
     "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
     "test": "jest",
     "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
-    "generate": "npm-run-all generate:*",
+    "generate": "npm-run-all generate:template:*",
     "generate:template:mailvalidation": "mjml MailValidation/index.mjml -o MailValidation/index.html",
     "generate:template:login-notification": "mjml LoginNotification/index.mjml -o LoginNotification/index.html",
     "generate:template:login-notification-with-link": "mjml LoginNotificationIOWeb/index.mjml -o LoginNotificationIOWeb/index.html"
