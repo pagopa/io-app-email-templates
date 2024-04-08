@@ -8,7 +8,6 @@ coverage
 .vscode
 .npmrc
 .env
-nohup.out
 
 # eslint section
 !.eslintrc.js
