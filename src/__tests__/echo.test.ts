@@ -1,7 +1,9 @@
+import { describe, expect, test } from "vitest";
+
 import { echo } from "../echo";
 
 describe("test echo", () => {
-  it("to remove", () => {
+  test("to remove", () => {
     expect(echo(1)).toEqual(1);
   });
 });
