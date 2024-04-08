@@ -1,0 +1,36 @@
+name: "Continuous Integration"
+
+on:
+  - pull_request
+
+jobs:
+  checks:
+    name: Static Checks
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-pr-static-checks-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+    steps:
+      - id: checkout
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+
+      - id: setup-node
+        uses: actions/setup-node@e33196f7422957bea03ed53f6fbb155025ffc7b8 # v3.7.0
+        with:
+          node-version-file: ".node-version"
+
+      - id: install-packages
+        run: yarn install --frozen-lockfile
+        shell: bash
+
+      - id: build
+        run: yarn build
+
+      - id: lint
+        run: yarn lint
+
+      - id: check-templates
+        run: yarn generate && [[ -z $(git status --porcelain) ]] && exit 0 || git diff && exit 1
+
+      - id: test
+        run: yarn test

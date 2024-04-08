@@ -1,0 +1,31 @@
+{
+  "name": "@pagopa/io-app-email-templates",
+  "version": "0.0.1",
+  "description": "Common html template for email",
+  "repository": "https://github.com/pagopa/io-app-email-templates",
+  "author": "https://www.pagopa.gov.it",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "shx rm -rf dist",
+    "build": "tsc",
+    "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
+    "test": "vitest run",
+    "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
+    "generate": "npm-run-all generate:template:*",
+    "generate:template:mailvalidation": "mjml MailValidation/index.mjml -o MailValidation/index.html",
+    "generate:template:login-notification": "mjml LoginNotification/index.mjml -o LoginNotification/index.html",
+    "generate:template:login-notification-with-link": "mjml LoginNotificationIOWeb/index.mjml -o LoginNotificationIOWeb/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@pagopa/eslint-config": "^3.0.0",
+    "dependency-check": "^4.1.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mjml": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "shx": "^0.3.4",
+    "typescript": "^5.4.4",
+    "vitest": "^1.4.0"
+  }
+}
