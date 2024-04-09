@@ -1,6 +1,6 @@
 # io-app-email-templates
 
-This repo contains the mail template(s) sent on behalf of IO App and its services. Templates are created using [MJML](https://mjml.io/) markup language.
+This repo contains the mail template(s) sent on behalf of IO App and its services. Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
 ## How to apply changes
 
@@ -12,15 +12,19 @@ To edit them, you can choose among these following options:
 
 To generate the HTML output you need to install the following CLI tool:
 
-1. [MJML](https://github.com/keithamus/hbs-cli) package:
+1. [MJML](https://www.npmjs.com/package/mjml) package:
 
 ```shell
-$ npm install --g mjml
+$ npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE>
 ```
 
-## How to deploy changes
-
-Once you built the template, update the default template in the [io-functions-commons](https://github.com/pagopa/io-functions-commons)'s repository ([MJML source code](https://github.com/pagopa/io-functions-commons/tree/master/templates) and [generated HTML with parameters](https://github.com/pagopa/io-functions-commons/blob/master/src/templates/html/default.ts)) through a pull request.
+## Add a new template
+Steps:
+1. Create a directory on the root of the project with a name of your choice.
+2. Put an `apply` method in a typescript file named `<NAME>.template.ts` inside your template directory.
+3. Put a generation step inside `package.json`(follow the other scripts as example). This will generate an `index.ts` file with the template inside. 
+   Make sure to put `{{TEMPLATE}}` in the method that is going to be replaced with the HTML generated from the mjml file.
+4. Generate a snapshot test to make sure the content doesn't change unexpectedly
 
 ## Compatibility
 
