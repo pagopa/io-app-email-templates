@@ -11,7 +11,8 @@
     "**/*.js",
     "**/*.js.map",
     "**/*.d.ts",
-    "!.eslintrc.js"
+    "!.eslintrc.js",
+    "!vitest.config.js"
   ],
   "scripts": {
     "build": "tsc",
