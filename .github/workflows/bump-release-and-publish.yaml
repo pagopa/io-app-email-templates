@@ -96,7 +96,8 @@ jobs:
           node-version-file: ".node-version"
           # Defaults to the user or organization that owns the workflow file
           scope: '@pagopa'
-      - run: npm ci
-      - run: npm publish --access public
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn publish --new-version ${{ steps.semver.outputs.new_version }} --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
