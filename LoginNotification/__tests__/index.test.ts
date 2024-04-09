@@ -14,10 +14,8 @@ describe("Snapshot testing", () => {
       "IDP" as NonEmptyString,
       new Date("1970-01-01"),
       "192.168.0.1" as NonEmptyString,
-      { href: "assistanceRef" } as ValidUrl,
+      { href: "assistanceRef" } as ValidUrl
     );
-    // expect(mockExtractTime).toHaveBeenCalledTimes(1);
-    // expect(mockExtractDate).toHaveBeenCalledTimes(1);
 
     expect(htmlOutput).toMatchSnapshot();
   });

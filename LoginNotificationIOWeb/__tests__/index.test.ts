@@ -13,10 +13,8 @@ describe("Snapshot testing", () => {
       "IDP" as NonEmptyString,
       new Date("1970-01-01"),
       "192.168.0.1" as NonEmptyString,
-      "https://magiclinkref" as NonEmptyString,
+      "https://magiclinkref" as NonEmptyString
     );
-    // expect(mockExtractTime).toHaveBeenCalledTimes(1);
-    // expect(mockExtractDate).toHaveBeenCalledTimes(1);
 
     expect(htmlOutput).toMatchSnapshot();
   });
