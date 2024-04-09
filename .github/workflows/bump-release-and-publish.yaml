@@ -1,0 +1,103 @@
+name: Make Release
+
+on:
+  workflow_dispatch:
+    branches:
+      - main
+    inputs:
+      semver:
+        required: true
+        type: choice
+        description: Select the new Semantic Version
+        options:
+          - major
+          - minor
+          - patch
+          - skip
+
+jobs:
+  bump_release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Input Log
+        run: |
+          echo "📝 Inputs"
+          echo "semver: ${{ inputs.semver }}" 
+        shell: bash
+
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".node-version"
+
+      - id: get_version
+        name: Get Version
+        run: |
+          PACKAGE_FILE="package.json"
+          if [[ -f "$PACKAGE_FILE" ]]; then
+            echo "version=$(jq .version package.json)" >> $GITHUB_ENV
+          fi
+        shell: bash
+
+      - name: Bump Package Version
+        id: bump
+        uses: pagopa/github-actions-template/bump-semver@main
+        with:
+          semver: ${{ inputs.semver  }}
+          current_version: ${{ env.version }}
+
+      - id: semver
+        name: New Version
+        run: |   
+          echo "new_version=${{ steps.bump.outputs.new_version}}" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Push New Version
+        if: ${{ inputs.semver != 'skip' }}
+        shell: bash
+        run: |
+          contents="$(jq '.version = "${{ steps.semver.outputs.new_version }}"' package.json)"
+          echo -E "${contents}" > package.json
+    
+          git add .
+          git config --global user.email "github-bot@pagopa.it"
+          git config --global user.name "pagopa-github-bot"
+          git commit -m "Bump to version ${{ steps.semver.outputs.new_version }}" || exit 0
+          git push origin ${{ github.ref_name }}
+
+      - name: Create Release
+        if: ${{ inputs.semver != 'skip' }}
+        uses: ncipollo/release-action@v1.12.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit: ${{ github.ref_name }}
+          tag: ${{ steps.semver.outputs.new_version }}
+          name: Release ${{ steps.semver.outputs.new_version }}
+          makeLatest: latest
+          generateReleaseNotes: true
+          prerelease: false
+
+  build_and_publish:
+    needs: bump_release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://registry.npmjs.org'
+          node-version-file: ".node-version"
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@pagopa'
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn publish --new-version ${{ steps.semver.outputs.new_version }} --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
