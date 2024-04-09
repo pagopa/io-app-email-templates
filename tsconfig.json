@@ -2,17 +2,16 @@
   "compilerOptions": {
     "module": "CommonJS",
     "target": "es2022",
-    "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true,
     "inlineSources": true,
     "strict": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declaration": true,
   },
   "exclude": [
     "node_modules",
-    "dist",
     "**/__tests__"
   ]
 }

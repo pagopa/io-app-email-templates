@@ -5,10 +5,18 @@
   "repository": "https://github.com/pagopa/io-app-email-templates",
   "author": "https://www.pagopa.gov.it",
   "license": "MIT",
+  "files": [
+    "package.json",
+    "README.md",
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts",
+    "!jest.config.js",
+    "!.eslintrc.js"
+  ],
   "scripts": {
-    "prebuild": "shx rm -rf dist",
     "build": "tsc",
-    "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
+    "postbuild": "dependency-check package.json --no-dev --missing ./**/*.js",
     "test": "vitest run",
     "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
     "generate": "npm-run-all generate:template:*",
