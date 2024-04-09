@@ -65,7 +65,7 @@ exports[`Snapshot testing > should match snapshot 1`] = `
       <div
          class="mail-body" style="" lang="it" dir="auto"
       >
-        <!-- mj-include fails to read file : ../utils/style.css at /Users/gabriele.mendolia/Desktop/Work/pagopa/utils/style.css -->
+        <!-- mj-include fails to read file : ../style.css at /Users/gabriele.mendolia/Desktop/Work/pagopa/style.css -->
       
       <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
@@ -82,7 +82,7 @@ exports[`Snapshot testing > should match snapshot 1`] = `
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
                   
-      <!-- App IO Logo --><!-- mj-include fails to read file : ../utils/partials/main-logo.mjml at /Users/gabriele.mendolia/Desktop/Work/pagopa/utils/partials/main-logo.mjml -->
+      <!-- App IO Logo --><!-- mj-include fails to read file : ../partials/main-logo.mjml at /Users/gabriele.mendolia/Desktop/Work/pagopa/partials/main-logo.mjml -->
           <!--[if mso | IE]><tr><td class="section-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook" role="presentation" style="width:560px;" width="560" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
@@ -356,7 +356,7 @@ exports[`Snapshot testing > should match snapshot 1`] = `
     
       
       <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
-        <!-- Divider --><!-- mj-include fails to read file : ../utils/partials/divider.mjml at /Users/gabriele.mendolia/Desktop/Work/pagopa/utils/partials/divider.mjml --><!-- Footer --><!-- mj-include fails to read file : ../utils/partials/footer-login-notification.mjml at /Users/gabriele.mendolia/Desktop/Work/pagopa/utils/partials/footer-login-notification.mjml -->
+        <!-- Divider --><!-- mj-include fails to read file : ../partials/divider.mjml at /Users/gabriele.mendolia/Desktop/Work/pagopa/partials/divider.mjml --><!-- Footer --><!-- mj-include fails to read file : ../partials/footer-login-notification.mjml at /Users/gabriele.mendolia/Desktop/Work/pagopa/partials/footer-login-notification.mjml -->
     
                 <!--[if mso | IE]></table><![endif]-->
               </td>

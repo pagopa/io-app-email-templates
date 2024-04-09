@@ -18,7 +18,7 @@ export const apply = (
   identityProvider: NonEmptyString,
   dateTime: DateFromTimestamp,
   ipAddress: NonEmptyString,
-  magicLinkRef: NonEmptyString,
+  magicLinkRef: NonEmptyString
 ): string => {
   const identity_provider = identityProvider;
   const date = extractDate(dateTime);

@@ -11,7 +11,7 @@ const splitAndCap = (s: string): string =>
 export function apply(
   title: string,
   validationUrl: string,
-  unformattedName?: string,
+  unformattedName?: string
 ): string {
   const name = unformattedName ? splitAndCap(unformattedName) : "";
   return `{{TEMPLATE}}`;
