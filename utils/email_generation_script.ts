@@ -5,7 +5,7 @@ import mjml2html from "mjml";
 
 const LOCAL_ASSET_REGEX = /\.\.\/assets\//g;
 const REMOTE_ASSET_BASE_URL = (version: string): string =>
-  `https://raw.githubusercontent.com/pagopa/io-messages-email-templates/${version}/assets/`;
+  `https://raw.githubusercontent.com/pagopa/io-app-email-templates/${version}/assets/`;
 
 const writeFile = (mjmlDirectory: string): void => {
   try {
@@ -13,10 +13,10 @@ const writeFile = (mjmlDirectory: string): void => {
       path.resolve(__dirname, "../" + mjmlDirectory + "/index.mjml"),
       "utf8"
     );
-    const html: string = mjml2html(mjmlContent).html.replace(
-      LOCAL_ASSET_REGEX,
-      REMOTE_ASSET_BASE_URL
-    );
+    const html: string = mjml2html(mjmlContent, {
+      // workaround to let current mjml see partials and style through the use of parent dir
+      filePath: "./assets",
+    }).html.replace(LOCAL_ASSET_REGEX, REMOTE_ASSET_BASE_URL);
 
     const emailApplierTemplate = fs.readFileSync(
       path.resolve(__dirname, "../" + mjmlDirectory + "/applier.template.ts"),
