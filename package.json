@@ -8,14 +8,17 @@
   "files": [
     "package.json",
     "README.md",
-    "./dist/*.js",
-    "./dist/*.js.map",
-    "./dist/*.d.ts",
-    "!.eslintrc.js",
-    "!vitest.config.js"
+    "./dist/*"
   ],
   "exports": {
     "./*": "./dist/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*"
+      ]
+    }
   },
   "scripts": {
     "prebuild": "shx rm -rf dist",
