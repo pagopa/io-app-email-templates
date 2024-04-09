@@ -26,21 +26,34 @@
     "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
     "test": "vitest run",
     "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
-    "generate": "npm-run-all generate:template:*",
-    "generate:template:mailvalidation": "mjml MailValidation/index.mjml -o MailValidation/index.html",
-    "generate:template:login-notification": "mjml LoginNotification/index.mjml -o LoginNotification/index.html",
-    "generate:template:login-notification-with-link": "mjml LoginNotificationIOWeb/index.mjml -o LoginNotificationIOWeb/index.html"
+    "generate": "npm-run-all -p generate:*",
+    "generate:mailvalidation": "ts-node ./utils/email_generation_script.ts MailValidation/",
+    "generate:loginnotification": "ts-node ./utils/email_generation_script.ts LoginNotificationIOWeb/",
+    "generate:loginnotificationfallback": "ts-node ./utils/email_generation_script.ts LoginNotification/",
+    "test:watch": "vitest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@pagopa/ts-commons": "^13.0.0",
+    "fp-ts": "^2.16.5",
+    "io-ts": "^2.2.21",
+    "moment-timezone": "^0.5.45"
+  },
   "devDependencies": {
     "@pagopa/eslint-config": "^3.0.0",
+    "@types/mjml": "^4.7.4",
+    "@types/node": "^18",
     "dependency-check": "^4.1.0",
     "eslint": "^8.28.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "mjml": "^4.13.0",
+    "mjml": "^4.15.3",
     "npm-run-all": "^4.1.5",
     "shx": "^0.3.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.4",
     "vitest": "^1.4.0"
+  },
+  "peerDependencies": {
+    "fp-ts": "^2.16.5",
+    "io-ts": "^2.2.21"
   }
 }

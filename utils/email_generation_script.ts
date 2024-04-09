@@ -1,0 +1,38 @@
+import * as fs from "fs";
+import * as path from "path";
+import mjml2html from "mjml";
+
+const LOCAL_ASSET_REGEX = /\.\.\/assets\//g;
+const REMOTE_ASSET_BASE_URL = (version: string): string =>
+  `https://raw.githubusercontent.com/pagopa/io-messages-email-templates/${version}/assets/`;
+
+const writeFile = (mjmlDirectory: string) => {
+  try {
+    const mjmlContent: string = fs.readFileSync(
+      path.resolve(__dirname, "../" + mjmlDirectory + "/index.mjml"),
+      "utf8",
+    );
+    const html: string = mjml2html(mjmlContent).html.replace(
+      LOCAL_ASSET_REGEX,
+      REMOTE_ASSET_BASE_URL,
+    );
+
+    const emailApplierTemplate = fs.readFileSync(
+      path.resolve(__dirname, "../" + mjmlDirectory + "/applier.template.ts"),
+      "utf8",
+    );
+
+    const content = emailApplierTemplate.replace("{{TEMPLATE}}", html);
+
+    fs.writeFileSync(
+      path.resolve(__dirname, "../" + mjmlDirectory + "/index.ts"),
+      content,
+    );
+  } catch (e) {
+    console.error("Error while executing script");
+    console.error(e);
+    process.exit(1);
+  }
+};
+
+writeFile(process.argv[2]);
