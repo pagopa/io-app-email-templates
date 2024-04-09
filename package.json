@@ -8,15 +8,19 @@
   "files": [
     "package.json",
     "README.md",
-    "**/*.js",
-    "**/*.js.map",
-    "**/*.d.ts",
+    "./dist/*.js",
+    "./dist/*.js.map",
+    "./dist/*.d.ts",
     "!.eslintrc.js",
     "!vitest.config.js"
   ],
+  "exports": {
+    "./*": "./dist/*.js"
+  },
   "scripts": {
+    "prebuild": "shx rm -rf dist",
     "build": "tsc",
-    "postbuild": "dependency-check package.json --no-dev --missing ./**/*.js",
+    "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
     "test": "vitest run",
     "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
     "generate": "npm-run-all generate:template:*",
