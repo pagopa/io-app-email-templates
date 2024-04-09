@@ -21,7 +21,7 @@
     }
   },
   "scripts": {
-    "prebuild": "shx rm -rf dist",
+    "prebuild": "shx rm -rf dist && npm-run-all -p generate:*",
     "build": "tsc",
     "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
     "test": "vitest run",
