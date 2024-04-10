@@ -1,18 +1,7 @@
-import moment from "moment-timezone";
-
 import { NonEmptyString } from "@pagopa/ts-commons/lib/strings";
 import { DateFromTimestamp } from "@pagopa/ts-commons/lib/dates";
 import { ValidUrl } from "@pagopa/ts-commons/lib/url";
-
-const TIME_ZONE = "Europe/Rome";
-const TIME_FORMAT = "HH:mm";
-const DATE_FORMAT = "DD/MM/YYYY";
-
-const extractTime = (d: Date): string =>
-  moment(d).tz(TIME_ZONE).format(TIME_FORMAT);
-
-const extractDate = (d: Date): string =>
-  moment(d).tz(TIME_ZONE).format(DATE_FORMAT);
+import { extractDate, extractTime } from "../utils/datetime";
 
 export const apply = (
   name: NonEmptyString,

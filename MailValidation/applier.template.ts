@@ -1,12 +1,4 @@
-const capitalize = (s: string): string =>
-  s.charAt(0).toUpperCase() + s.slice(1);
-
-const splitAndCap = (s: string): string =>
-  s
-    .toLowerCase()
-    .split(" ")
-    .map((e) => capitalize(e))
-    .join(" ");
+import { splitAndCap } from "../utils/capitalize";
 
 export function apply(
   title: string,

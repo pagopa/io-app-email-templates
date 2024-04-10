@@ -4,8 +4,7 @@ import * as path from "path";
 import mjml2html from "mjml";
 
 const LOCAL_ASSET_REGEX = /\.\.\/assets\//g;
-const REMOTE_ASSET_BASE_URL = (version: string): string =>
-  `https://raw.githubusercontent.com/pagopa/io-app-email-templates/${version}/assets/`;
+const REMOTE_ASSET_BASE_URL = `https://raw.githubusercontent.com/pagopa/io-app-email-templates/assets-v1.0.0/assets/`;
 
 const writeFile = (mjmlDirectory: string): void => {
   try {
