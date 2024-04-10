@@ -3,17 +3,20 @@
     "module": "CommonJS",
     "target": "es2022",
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": ".",
     "sourceMap": true,
     "inlineSources": true,
     "strict": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "declaration": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules",
     "dist",
-    "**/__tests__"
+    "**/__tests__",
+    "**/*.template.ts",
+    "utils/email_generation_script.ts"
   ]
 }

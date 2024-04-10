@@ -13,6 +13,12 @@ module.exports = {
         "docker",
         "jest.config.js",
         "**/__integrations__/*",
+        // index files are generated dinamically and may contain a lot of HTML content inside string literals
+        "**/index.ts",
+        // template files in this project will certainly contain unused variables
+        "**/*.template.ts",
+        // ignoring script file
+        "utils/email_generation_script.ts"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
