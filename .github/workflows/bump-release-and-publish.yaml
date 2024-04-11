@@ -60,16 +60,16 @@ jobs:
         if: ${{ inputs.semver != 'skip' }}
         shell: bash
         env:
-          GITHUB_TOKEN: ${{ secrets.PAGOPA_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_TEST }}
         run: |
           contents="$(jq '.version = "${{ steps.semver.outputs.new_version }}"' package.json)"
           echo -E "${contents}" > package.json
-    
+          echo $GITHUB_TOKEN
           git add .
           git config --global user.email "github-bot@pagopa.it"
           git config --global user.name "pagopa-github-bot"
           git commit -m "Bump to version ${{ steps.semver.outputs.new_version }}" || exit 0
-          git push origin ${{ github.ref_name }} --force
+          git push origin ${{ github.ref_name }}
 
       - name: Create Release
         if: ${{ inputs.semver != 'skip' }}
