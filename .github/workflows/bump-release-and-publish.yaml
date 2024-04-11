@@ -59,6 +59,8 @@ jobs:
       - name: Push New Version
         if: ${{ inputs.semver != 'skip' }}
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAGOPA_BOT_TOKEN }}
         run: |
           contents="$(jq '.version = "${{ steps.semver.outputs.new_version }}"' package.json)"
           echo -E "${contents}" > package.json
@@ -73,7 +75,7 @@ jobs:
         if: ${{ inputs.semver != 'skip' }}
         uses: ncipollo/release-action@v1.12.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAGOPA_BOT_TOKEN }}
         with:
           commit: ${{ github.ref_name }}
           tag: ${{ steps.semver.outputs.new_version }}
