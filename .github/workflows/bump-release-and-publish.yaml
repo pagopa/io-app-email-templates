@@ -18,6 +18,8 @@ on:
 jobs:
   bump_release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Input Log
         run: |
@@ -59,12 +61,9 @@ jobs:
       - name: Push New Version
         if: ${{ inputs.semver != 'skip' }}
         shell: bash
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_TEST }}
         run: |
           contents="$(jq '.version = "${{ steps.semver.outputs.new_version }}"' package.json)"
           echo -E "${contents}" > package.json
-          echo $GITHUB_TOKEN
           git add .
           git config --global user.email "github-bot@pagopa.it"
           git config --global user.name "pagopa-github-bot"
