@@ -11,7 +11,8 @@ jobs:
     if: contains( github.event.pull_request.labels.*.name, 'release')
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      # contents write permissions required for release
+      contents: write
       packages: write
     steps:
       - id: get_version
@@ -20,6 +21,9 @@ jobs:
           PACKAGE_FILE="package.json"
           if [[ -f "$PACKAGE_FILE" ]]; then
             echo "new_version=$(jq .version package.json)" >> $GITHUB_ENV
+          else
+            echo "::error title=Pipeline error::Pipeline could not find package.json file"
+            exit 1
           fi
         shell: bash
       - name: Create Release tag
