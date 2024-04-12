@@ -13,7 +13,6 @@ on:
           - major
           - minor
           - patch
-          - skip
 
 jobs:
   bump_release:
@@ -58,47 +57,23 @@ jobs:
           echo "new_version=${{ steps.bump.outputs.new_version}}" >> $GITHUB_OUTPUT
         shell: bash
 
-      - name: Push New Version
-        if: ${{ inputs.semver != 'skip' }}
+      - name: Push New Version to new branch
+        id: new_branch_push
         shell: bash
+        env:
+          NEW_BRANCH_NAME: releases/${{ steps.semver.outputs.new_version }}
         run: |
           contents="$(jq '.version = "${{ steps.semver.outputs.new_version }}"' package.json)"
           echo -E "${contents}" > package.json
+          # Creating new branch for the release
+          echo "new_branch_name=$NEW_BRANCH_NAME" >> $GITHUB_OUTPUT
+          git checkout -b $NEW_BRANCH_NAME
           git add .
           git config --global user.email "github-bot@pagopa.it"
           git config --global user.name "pagopa-github-bot"
           git commit -m "Bump to version ${{ steps.semver.outputs.new_version }}" || exit 0
-          git push origin ${{ github.ref_name }}
+          git push -u origin $NEW_BRANCH_NAME
 
-      - name: Create Release
-        if: ${{ inputs.semver != 'skip' }}
-        uses: ncipollo/release-action@v1.12.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAGOPA_BOT_TOKEN }}
-        with:
-          commit: ${{ github.ref_name }}
-          tag: ${{ steps.semver.outputs.new_version }}
-          name: Release ${{ steps.semver.outputs.new_version }}
-          makeLatest: latest
-          generateReleaseNotes: true
-          prerelease: false
-
-  build_and_publish:
-    needs: bump_release
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          registry-url: 'https://registry.npmjs.org'
-          node-version-file: ".node-version"
-          # Defaults to the user or organization that owns the workflow file
-          scope: '@pagopa'
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - run: yarn publish --new-version ${{ steps.semver.outputs.new_version }} --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Create release pull request
+        run:
+          gh pr create -B main -H ${{ steps.new_branch_push.outputs.new_branch_name }} --title 'Release version pull request' --body 'This PR has been created by a Github Action' -l "release"
