@@ -75,5 +75,7 @@ jobs:
           git push -u origin $NEW_BRANCH_NAME
 
       - name: Create release pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run:
           gh pr create -B main -H ${{ steps.new_branch_push.outputs.new_branch_name }} --title 'Release version pull request' --body 'This PR has been created by a Github Action' -l "release"
