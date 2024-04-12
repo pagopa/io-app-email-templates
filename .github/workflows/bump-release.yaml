@@ -13,15 +13,12 @@ on:
           - major
           - minor
           - patch
-          - skip
 
 jobs:
   bump_release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    outputs:
-      new_version: ${{ steps.semver.outputs.new_version }}
     steps:
       - name: Input Log
         run: |
@@ -62,7 +59,6 @@ jobs:
 
       - name: Push New Version to new branch
         id: new_branch_push
-        if: ${{ inputs.semver != 'skip' }}
         shell: bash
         env:
           NEW_BRANCH_NAME: releases/${{ steps.semver.outputs.new_version }}
