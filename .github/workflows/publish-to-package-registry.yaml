@@ -44,6 +44,6 @@ jobs:
           makeLatest: latest
           generateReleaseNotes: true
           prerelease: false
-      - run: yarn publish --new-version ${{ env.new_version }} --access public
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
