@@ -15,6 +15,15 @@ jobs:
       contents: write
       packages: write
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://registry.npmjs.org'
+          node-version-file: ".node-version"
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@pagopa'
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
       - id: get_version
         name: Get Version
         run: |
@@ -35,15 +44,6 @@ jobs:
           makeLatest: latest
           generateReleaseNotes: true
           prerelease: false
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          registry-url: 'https://registry.npmjs.org'
-          node-version-file: ".node-version"
-          # Defaults to the user or organization that owns the workflow file
-          scope: '@pagopa'
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
       - run: yarn publish --new-version ${{ env.new_version }} --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
