@@ -1,0 +1,46 @@
+on:
+  # on merge on main branch
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+jobs:
+  build_and_publish:
+    # run this job only if the PR was containing the specific release label 
+    if: contains( github.event.pull_request.labels.*.name, 'release')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - id: get_version
+        name: Get Version
+        run: |
+          PACKAGE_FILE="package.json"
+          if [[ -f "$PACKAGE_FILE" ]]; then
+            echo "new_version=$(jq .version package.json)" >> $GITHUB_ENV
+          fi
+        shell: bash
+      - name: Create Release tag
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          token: ${{ secrets.PAGOPA_BOT_TOKEN }}
+          commit: ${{ github.ref_name }}
+          tag: ${{ env.new_version }}
+          name: Release ${{ env.new_version }}
+          makeLatest: latest
+          generateReleaseNotes: true
+          prerelease: false
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://registry.npmjs.org'
+          node-version-file: ".node-version"
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@pagopa'
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn publish --new-version ${{ env.new_version }} --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
