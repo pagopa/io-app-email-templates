@@ -1,4 +1,6 @@
 on:
+  # debug(TODO: remove)
+  workflow_dispatch:
   # on merge on main branch
   pull_request:
     types:
@@ -8,7 +10,7 @@ on:
 jobs:
   build_and_publish:
     # run this job only if the PR was containing the specific release label 
-    if: contains( github.event.pull_request.labels.*.name, 'release')
+    if: contains( github.event.pull_request.labels.*.name, 'release') ||  github.event_name == 'workflow_dispatch'
     environment: prod-cd
     runs-on: ubuntu-latest
     permissions:
