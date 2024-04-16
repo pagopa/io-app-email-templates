@@ -9,6 +9,7 @@ jobs:
   build_and_publish:
     # run this job only if the PR was containing the specific release label 
     if: contains( github.event.pull_request.labels.*.name, 'release')
+    environment: prod-cd
     runs-on: ubuntu-latest
     permissions:
       # contents write permissions required for release
@@ -29,7 +30,7 @@ jobs:
         run: |
           PACKAGE_FILE="package.json"
           if [[ -f "$PACKAGE_FILE" ]]; then
-            echo "new_version=$(jq .version package.json)" >> $GITHUB_ENV
+            echo "new_version=$(jq -r .version package.json)" >> $GITHUB_ENV
           else
             echo "::error title=Pipeline error::Pipeline could not find package.json file"
             exit 1
