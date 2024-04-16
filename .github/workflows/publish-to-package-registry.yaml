@@ -29,7 +29,7 @@ jobs:
         run: |
           PACKAGE_FILE="package.json"
           if [[ -f "$PACKAGE_FILE" ]]; then
-            echo "new_version=$(jq .version package.json)" >> $GITHUB_ENV
+            echo "new_version=$(jq -r .version package.json)" >> $GITHUB_ENV
           else
             echo "::error title=Pipeline error::Pipeline could not find package.json file"
             exit 1
