@@ -9,6 +9,7 @@ jobs:
   build_and_publish:
     # run this job only if the PR was containing the specific release label 
     if: contains( github.event.pull_request.labels.*.name, 'release')
+    environment: prod-cd
     runs-on: ubuntu-latest
     permissions:
       # contents write permissions required for release
