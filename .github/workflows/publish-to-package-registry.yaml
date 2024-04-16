@@ -1,5 +1,4 @@
 on:
-  # debug(TODO: remove)
   workflow_dispatch:
   # on merge on main branch
   pull_request:
