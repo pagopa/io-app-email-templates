@@ -17,8 +17,8 @@ jobs:
       contents: write
       packages: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           registry-url: 'https://registry.npmjs.org'
           node-version-file: ".node-version"
@@ -38,7 +38,7 @@ jobs:
           fi
         shell: bash
       - name: Create Release tag
-        uses: ncipollo/release-action@v1.12.0
+        uses: ncipollo/release-action@a2e71bdd4e7dab70ca26a852f29600c98b33153e # v1.12.0
         with:
           commit: ${{ github.ref_name }}
           tag: ${{ env.new_version }}
