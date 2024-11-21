@@ -1,0 +1,95 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>I tuoi accessi a servizi di terze parti</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- App IO Logo -->
+      <mj-include path="../partials/main-logo.mjml" />
+      <mj-section css-class="section" padding="0px" padding-bottom="8px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            padding-top="24px"
+            padding-bottom="8px"
+            padding-left="0px"
+            padding-right="0px"
+            color="#17324D"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 36px; margin: 0">
+              I tuoi accessi a servizi di terze parti
+            </h1>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <!-- Body 1 Desktop (from MUI Italia)-->
+            <p>
+              Ciao, <br />
+              La cronologia dei tuoi accessi a servizi di terze parti aggiornata al <strong>${formattedDate}</strong> è
+              disponibile nel file allegato a questa email.
+            </p>
+            <p>
+              Per ciascun accesso effettuato sono riportati:
+              <ul>
+                <li>Data e ora di accesso</li>
+                <li>Nome del servizio esterno utilizzato</li>
+                <li>Link alla piattaforma web del servizio</li>
+              </ul>
+            </p>
+            <p>
+              Ti ricordiamo che puoi sempre consultare la cronologia dei tuoi accessi aggiornata su IO, dalla sezione Impostazioni > Sicurezza e accessi.
+            </p>
+          </mj-text>
+          <mj-button
+              font-family="Titillium Web, system-ui, sans-serif"
+              background-color="#0073E6"
+              font-size="14px"
+              line-height="18px"
+              font-weight="bold"
+              color="white"
+              align="left"
+              inner-padding="11px 20px"
+              border-radius="4px"
+              href="https://io.italia.it"
+              css-class="cta"
+              padding-left="0px"
+              padding-right="0px"
+            >
+              Vai su IO
+            </mj-button>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer -->
+      <mj-include path="../FimsAccessExport/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

@@ -30,6 +30,7 @@
     "generate:mailvalidation": "ts-node ./utils/email_generation_script.ts MailValidation/",
     "generate:loginnotification": "ts-node ./utils/email_generation_script.ts LoginNotificationIOWeb/",
     "generate:loginnotificationfallback": "ts-node ./utils/email_generation_script.ts LoginNotification/",
+    "generate:fimsaccessexport": "ts-node ./utils/email_generation_script.ts FimsAccessExport/",
     "test:watch": "vitest"
   },
   "dependencies": {

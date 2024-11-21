@@ -1,0 +1,23 @@
+<mj-section css-class="section" padding-top="0px">
+  <mj-column>
+    <mj-text
+      css-class="text-secondary"
+      font-size="14px"
+      line-height="20px"
+      font-weight="regular"
+      color="#5C6F82"
+      padding="0px"
+    >
+      <p>
+        <strong>
+          Non rispondere a questo indirizzo email: è utilizzato solo per l'invio
+          di questa comunicazione e, non essendo monitorato, non riceveresti
+          risposta.
+        </strong>
+      </p>
+      <p>
+        Ricevi questa comunicazione perché hai richiesto l'inoltro della cronologia degli accessi a servizi di terze parti dalle impostazioni di app IO.
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
