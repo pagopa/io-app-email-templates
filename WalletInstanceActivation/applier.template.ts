@@ -1,8 +1,10 @@
 import { ValidUrl } from "@pagopa/ts-commons/lib/url";
 
 export const apply = (
-  faqLink: ValidUrl,
-  ioAppLink: ValidUrl,
+  faqLinkURL: ValidUrl,
+  ioAppLinkURL: ValidUrl,
 ): string => {
+  const faqLink = faqLinkURL.href;
+  const ioAppLink = ioAppLinkURL.href;
   return `{{TEMPLATE}}`;
 };
