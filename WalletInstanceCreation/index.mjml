@@ -98,7 +98,7 @@
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer -->
-      <mj-include path="../partials/footer.mjml" />
+      <mj-include path="../partials/footer-wallet-instance-creation.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
