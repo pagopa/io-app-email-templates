@@ -1,5 +1,4 @@
 <mjml lang="it">
-  <!-- HEAD SECTION -->
   <mj-head>
     <mj-title
       >Documenti su IO - Aggiungi la versione digitale dei tuoi documenti al
@@ -18,15 +17,11 @@
       <meta name="supported-color-schemes" content="light dark" />
     </mj-raw>
   </mj-head>
-
-  <!-- BODY SECTION -->
   <mj-body css-class="mail-body">
     <mj-include path="../style.css" type="css" />
     <mj-wrapper padding-right="20px" padding-left="20px">
-      <!-- LOGO -->
+      <!-- App IO Logo -->
       <mj-include path="../partials/main-logo.mjml" />
-
-      <!-- TEXT CONTENT -->
       <mj-section css-class="section" padding="0px" padding-bottom="8px">
         <mj-column>
           <!-- Title & Main Message -->
@@ -103,11 +98,9 @@
           </mj-text>
         </mj-column>
       </mj-section>
-
-      <!-- DIVIDER -->
+      <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
-
-      <!-- FOOTER-->
+      <!-- Footer -->
       <mj-include path="../partials/footer.mjml" />
     </mj-wrapper>
   </mj-body>
