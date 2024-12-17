@@ -4,8 +4,7 @@ exports[`Snapshot testing > should match snapshot 1`] = `
 "<!doctype html>
 <html lang="it" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
-    <title>Documenti su IO - Aggiungi la versione digitale dei tuoi documenti al
-      Portafoglio</title>
+    <title>Documenti su IO - Aggiungi la versione digitale dei tuoi documenti al Portafoglio</title>
     <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<![endif]-->
