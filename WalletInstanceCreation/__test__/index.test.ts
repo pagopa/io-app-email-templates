@@ -10,7 +10,7 @@ describe("Snapshot testing", () => {
   it("should match snapshot", () => {
     const htmlOutput: string = apply(
       { href: "https://test.test/" } as ValidUrl,
-      { href: "https://test.test/" } as unknown as ValidUrl
+      { href: "https://test.test/" } as ValidUrl
     );
 
     expect(htmlOutput).toMatchSnapshot();
