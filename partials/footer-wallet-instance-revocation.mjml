@@ -1,0 +1,29 @@
+<mj-section css-class="section" padding="0px">
+  <mj-column>
+    <mj-text
+      font-size="14px"
+      line-height="20px"
+      font-weight="regular"
+      color="#A2ADB8"
+      padding="0px"
+    >
+      <p>Ricevi questo messaggio perché hai un'utenza attiva su app IO.</p>
+    </mj-text>
+    <mj-text
+      css-class="text-secondary"
+      font-size="14px"
+      line-height="20px"
+      font-weight="regular"
+      color="#5C6F82"
+      padding="0px"
+    >
+      <p>
+        <strong>
+          Non rispondere a questo indirizzo email: è utilizzato solo per l'invio
+          di questa comunicazione e, non essendo monitorato, non riceveresti
+          risposta.
+        </strong>
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
