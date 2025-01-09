@@ -370,7 +370,7 @@ p {
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#17324D;"
       ><p>
               Ciao,<br /><br />
-              alle ore LVTEST00A00A0001 del 10:00 hai richiesto di disattivare Documenti su IO. Tutti i
+              alle ore 10:00 del 20/12/2024 hai richiesto di disattivare Documenti su IO. Tutti i
               documenti presenti nel tuo Portafoglio sono stati disattivati.<br />
             </p>
             <p>
@@ -380,7 +380,7 @@ p {
               <strong>Non eri tu?</strong>
             </p>
             <p>
-              Per mantenere i tuoi dati al sicuro, <strong><a href="undefined" class="link">blocca l'accesso</a></strong>.
+              Per mantenere i tuoi dati al sicuro, <strong><a href="https://test.test/" class="link">blocca l'accesso</a></strong>.
             </p></div>
     
                 </td>
