@@ -32,6 +32,7 @@
     "generate:loginnotificationfallback": "ts-node ./utils/email_generation_script.ts LoginNotification/",
     "generate:fimsaccessexport": "ts-node ./utils/email_generation_script.ts FimsAccessExport/",
     "generate:walletinstancecreation": "ts-node ./utils/email_generation_script.ts WalletInstanceCreation/",
+    "generate:walletinstancerevocation": "ts-node ./utils/email_generation_script.ts WalletInstanceRevocation/",
     "test:watch": "vitest"
   },
   "dependencies": {

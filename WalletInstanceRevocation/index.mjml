@@ -1,0 +1,75 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>Messaggio da IO: Documenti su IO disattivato</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- App IO Logo -->
+      <mj-include path="../partials/main-logo.mjml" />
+      <mj-section css-class="section" padding="0px" padding-bottom="8px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            padding-top="24px"
+            padding-bottom="8px"
+            padding-left="0px"
+            padding-right="0px"
+            color="#17324D"
+          >
+            <h1 style="font-size: 32px; line-height: 36px; margin: 0">
+              Messaggio da IO: Documenti su IO disattivato
+            </h1>
+            <br />
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <p>
+              Ciao,<br /><br />
+              alle ore ${revocationTime} del ${revocationDate} hai richiesto di disattivare Documenti su IO. Tutti i
+              documenti presenti nel tuo Portafoglio sono stati disattivati.<br />
+            </p>
+            <p>
+              Se cambi idea, potrai aggiungerli di nuovo direttamente da app IO.<br /><br />
+            </p>
+            <p>
+              <strong>Non eri tu?</strong>
+            </p>
+            <p>
+              Per mantenere i tuoi dati al sicuro, <strong><a href="${blockAccessLink}" class="link">blocca l'accesso</a></strong>.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer -->
+      <mj-include path="../partials/footer-wallet-instance-revocation.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
