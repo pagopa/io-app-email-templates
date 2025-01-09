@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Messaggio da IO: IT Wallet disattivato</mj-title>
+    <mj-title>Messaggio da IO: Documenti su IO disattivato</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -33,7 +33,7 @@
             color="#17324D"
           >
             <h1 style="font-size: 32px; line-height: 36px; margin: 0">
-              Messaggio da IO: IT Wallet disattivato
+              Messaggio da IO: Documenti su IO disattivato
             </h1>
             <br />
           </mj-text>
@@ -50,8 +50,8 @@
             padding-right="0px"
           >
             <p>
-              Ciao ${fiscalCode},<br /><br />
-              alle ore ${revocationTime} del ${revocationDate} hai richiesto di disattivare IT Wallet. Tutti i
+              Ciao,<br /><br />
+              alle ore ${revocationTime} del ${revocationDate} hai richiesto di disattivare Documenti su IO. Tutti i
               documenti presenti nel tuo Portafoglio sono stati disattivati.<br />
             </p>
             <p>

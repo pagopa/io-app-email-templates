@@ -4,7 +4,7 @@ exports[`Snapshot testing > should match snapshot 1`] = `
 "<!doctype html>
 <html lang="it" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
-    <title>Messaggio da IO: IT Wallet disattivato</title>
+    <title>Messaggio da IO: Documenti su IO disattivato</title>
     <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<![endif]-->
@@ -354,7 +354,7 @@ p {
       <div
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:13px;font-weight:bold;line-height:1;text-align:left;color:#17324D;"
       ><h1 style="font-size: 32px; line-height: 36px; margin: 0">
-              Messaggio da IO: IT Wallet disattivato
+              Messaggio da IO: Documenti su IO disattivato
             </h1>
             <br /></div>
     
@@ -369,8 +369,8 @@ p {
       <div
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#17324D;"
       ><p>
-              Ciao LVTEST00A00A0001,<br /><br />
-              alle ore 10:00 del 20/12/2024 hai richiesto di disattivare IT Wallet. Tutti i
+              Ciao,<br /><br />
+              alle ore LVTEST00A00A0001 del 10:00 hai richiesto di disattivare Documenti su IO. Tutti i
               documenti presenti nel tuo Portafoglio sono stati disattivati.<br />
             </p>
             <p>
@@ -380,7 +380,7 @@ p {
               <strong>Non eri tu?</strong>
             </p>
             <p>
-              Per mantenere i tuoi dati al sicuro, <strong><a href="https://test.test/" class="link">blocca l'accesso</a></strong>.
+              Per mantenere i tuoi dati al sicuro, <strong><a href="undefined" class="link">blocca l'accesso</a></strong>.
             </p></div>
     
                 </td>
