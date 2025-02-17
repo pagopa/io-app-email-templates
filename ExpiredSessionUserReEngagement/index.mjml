@@ -1,0 +1,176 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>Importante: la tua sessione è scaduta</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- App IO Logo -->
+      <mj-include path="../partials/main-logo.mjml" />
+      <mj-section css-class="section" padding="0px" padding-bottom="8px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            padding-top="24px"
+            padding-bottom="8px"
+            padding-left="0px"
+            padding-right="0px"
+            color="#17324D"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 36px; margin: 0">
+              Accedi di nuovo per non perdere comunicazioni importanti
+            </h1>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <!-- Body 1 Desktop (from MUI Italia)-->
+            <p>Ciao,</p>
+            <p>
+              la tua sessione è scaduta il ${expirationDate}. Per continuare a
+              usare IO, devi <strong>accedere di nuovo</strong> con SPID o CIE.
+              Questo serve a verificare la tua identità e a proteggere i tuoi
+              dati.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Body 2 -->
+      <mj-section
+        css-class="message-preview"
+        padding="24px"
+        text-align="left"
+        border-radius="8px"
+      >
+        <mj-column>
+          <mj-text
+            css-class="text"
+            font-size="22px"
+            line-height="26px"
+            font-weight="600"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            Cosa succede se non accedi:
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="normal"
+            align="left"
+            color="#17324D"
+            padding="0"
+          >
+            <ul>
+              <li>
+                Smetti di ricevere comunicazioni importanti, anche a valore
+                legale
+              </li>
+              <li>Non puoi accedere velocemente ai tuoi documenti digitali</li>
+              <li>
+                Se non usi l’app per un po’ di tempo, il tuo dispositivo
+                potrebbe aiutomaticamente rimuovere l’app
+              </li>
+            </ul>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- App Button -->
+      <mj-section css-class="section" padding-bottom="0px" padding-top="24px">
+        <mj-column>
+          <mj-button
+            font-family="Titillium Web, system-ui, sans-serif"
+            background-color="#0073E6"
+            font-size="16px"
+            font-weight="bold"
+            color="white"
+            align="left"
+            inner-padding="14px 24px"
+            border-radius="4px"
+            href="#"
+            css-class="cta"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            Apri l'app
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <!-- Body 3 (helpcenter) -->
+      <mj-section css-class="section" padding="0px">
+        <mj-column>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <p style="margin-top: 8px">
+              Se non ricordi come accedere a IO con SPID o CIE, trovi tutte le
+              informazioni nel nostro <a href="https://assistenza.ioapp.it/hc/it/articles/32616176301713-Cosa-fare-quando-la-sessione-scade">Centro assistenza</a>.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Closing-->
+      <mj-section css-class="section" padding="0px">
+        <mj-column>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <p style="margin-top: 0px">
+              <br />
+              A presto,<br aria-hidden="true" />il team di PagoPA S.p.A.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer -->
+      <mj-include path="../partials/footer-login-notification.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
