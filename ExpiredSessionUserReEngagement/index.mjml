@@ -90,14 +90,14 @@
           >
             <ul>
               <li>
-                Smetti di ricevere comunicazioni importanti, anche a valore
-                legale
-              </li>
-              <li>Non puoi più accedere velocemente ai tuoi documenti digitali</li>
-              <li>
                 Se non usi l’app per un po’ di tempo, il tuo dispositivo
                 potrebbe automaticamente rimuovere l’app
               </li>
+              <li>
+                Se non hai le notifiche attive o se l'app viene rimossa, smetti di ricevere
+                comunicazioni importanti, anche a valore legale
+              </li>
+              <li>Non puoi più accedere velocemente ai tuoi documenti digitali</li>
             </ul>
           </mj-text>
         </mj-column>
