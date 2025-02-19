@@ -170,7 +170,7 @@
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer -->
-      <mj-include path="../partials/footer-expired-session-user-re-engagement.mjml" />
+      <mj-include path="../partials/footer-important-information.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
