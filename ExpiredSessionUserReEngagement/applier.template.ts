@@ -1,7 +1,8 @@
 import { ValidUrl } from "@pagopa/ts-commons/lib/url";
 
 export const apply = (
-    cta: ValidUrl,
+    ctaUrl: ValidUrl,
 ): string => {
+    const cta = ctaUrl.href
     return `{{TEMPLATE}}`;
 };
