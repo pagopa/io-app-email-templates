@@ -114,7 +114,7 @@
             align="left"
             inner-padding="14px 24px"
             border-radius="4px"
-            href="#"
+            href="{cta}"
             css-class="cta"
             padding-left="0px"
             padding-right="0px"

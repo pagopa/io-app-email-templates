@@ -1,8 +1,7 @@
-import { DateFromTimestamp } from "@pagopa/ts-commons/lib/dates";
-import { extractDate } from "../utils/datetime";
-
+import { ValidUrl } from "@pagopa/ts-commons/lib/url";
 
 export const apply = (
+    cta: ValidUrl,
 ): string => {
     return `{{TEMPLATE}}`;
 };

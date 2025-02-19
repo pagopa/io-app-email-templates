@@ -1,11 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { NonEmptyString } from "@pagopa/ts-commons/lib/strings";
 import * as applier from "../index";
+import { ValidUrl } from "@pagopa/ts-commons/lib/url";
 
 describe("Snapshot testing", () => {
   it("should match snapshot", () => {
     const htmlOutput: string = applier.apply(
-      new Date("1970-01-01") as Date,
+      { href: "utm" } as ValidUrl
     );
     expect(htmlOutput).toMatchSnapshot();
   });
