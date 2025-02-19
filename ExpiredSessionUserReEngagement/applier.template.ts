@@ -3,8 +3,6 @@ import { extractDate } from "../utils/datetime";
 
 
 export const apply = (
-    expirationDateTime: DateFromTimestamp,
 ): string => {
-    const expirationDate = extractDate(expirationDateTime);
     return `{{TEMPLATE}}`;
 };

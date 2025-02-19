@@ -52,7 +52,7 @@
             <!-- Body 1 Desktop (from MUI Italia)-->
             <p>Ciao,</p>
             <p>
-              la tua sessione è scaduta il ${expirationDate}. Per continuare a
+              la tua sessione è scaduta. Per continuare a
               usare IO, devi <strong>accedere di nuovo</strong> con SPID o CIE.
               Questo serve a verificare la tua identità e a proteggere i tuoi
               dati.
