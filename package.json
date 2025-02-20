@@ -1,6 +1,6 @@
 {
   "name": "@pagopa/io-app-email-templates",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Common html template for email",
   "repository": "https://github.com/pagopa/io-app-email-templates",
   "author": "https://www.pagopa.gov.it",
