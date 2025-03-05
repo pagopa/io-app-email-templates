@@ -371,8 +371,8 @@ p {
       ><!-- Body 1 Desktop (from MUI Italia)-->
             <p>Ciao,</p>
             <p>
-              la tua sessione è scaduta. Per continuare a
-              usare IO, devi <strong>accedere di nuovo</strong> con SPID o CIE.
+              dal giorno 01/01/2022 la tua sessione su IO è scaduta. Per continuare a
+              usare l’app, devi <strong>accedere di nuovo</strong> con SPID o CIE.
               Questo serve a verificare la tua identità e a proteggere i tuoi
               dati.
             </p></div>
@@ -427,7 +427,7 @@ p {
                   
       <div
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:22px;font-weight:600;line-height:26px;text-align:left;color:#17324D;"
-      >Cosa succede se non accedi:</div>
+      >Perché è importante accedere</div>
     
                 </td>
               </tr>
@@ -441,14 +441,17 @@ p {
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:normal;line-height:24px;text-align:left;color:#17324D;"
       ><ul>
               <li>
-                Se non usi l’app per un po’ di tempo, il tuo dispositivo
-                potrebbe automaticamente rimuovere l’app
+                Perché se non usi l’app per un po’ di tempo, il tuo dispositivo
+                potrebbe automaticamente cancellarla
               </li>
               <li>
-                Se non hai le notifiche attive o se l'app viene rimossa, smetti di ricevere
-                comunicazioni importanti, anche a valore legale
+                Perché se l'app viene rimossa o se non hai le notifiche push attive,
+                non ricevi più comunicazioni importanti, anche a valore legale
               </li>
-              <li>Non puoi più accedere velocemente ai tuoi documenti digitali</li>
+              <li>
+                Perché così puoi accedere velocemente ai tuoi documenti digitali
+                quando ne hai bisogno
+              </li>
             </ul></div>
     
                 </td>
