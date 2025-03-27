@@ -15,16 +15,29 @@ To generate the HTML output you need to install the following CLI tool:
 1. [MJML](https://www.npmjs.com/package/mjml) package:
 
 ```shell
-$ npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE>
+npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE>
 ```
 
 ## Add a new template
+
 Steps:
+
 1. Create a directory on the root of the project with a name of your choice.
 2. Put an `apply` method in a typescript file named `applier.template.ts` inside your template directory.
-3. Put a generation step inside `package.json`(follow the other scripts as example). This will generate an `index.ts` file with the template inside. 
+3. Put a generation step inside `package.json`(follow the other scripts as example). This will generate an `index.ts` file with the template inside.
    Make sure to put `{{TEMPLATE}}` in the method that is going to be replaced with the HTML generated from the mjml file.
 4. Generate a snapshot test to make sure the content doesn't change unexpectedly
+
+## Release
+
+In order to release a new version:
+
+1. Run [the release action](https://github.com/pagopa/io-app-email-templates/actions/workflows/bump-release.yaml)
+2. A new PR will be created, review, approve and merge it
+3. The [publish action](https://github.com/pagopa/io-app-email-templates/actions/workflows/publish-to-package-registry.yaml) will start and release both a tag and a new package version in the npm package registry
+
+You can check here if the new version has been published once the publish action
+is completed.
 
 ## Compatibility
 
