@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Hai un nuovo messaggio da leggere</mj-title>
+    <mj-title>{{title}}</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -65,7 +65,7 @@
             width="36px"
             height="36px"
             src="https://assets.cdn.io.italia.it/logos/organizations/82003830161.png"
-            alt=" Logo ${senderOrganizationName}"
+            alt=" Logo ${senderMetadata.organizationName}"
             align="left"
             border-radius="8px"
             padding="0px"
@@ -81,8 +81,7 @@
             color="#17324D"
             padding="0"
           >
-            Comune di Sotto il Monte Giovanni XXIII Giovanni XXIII Giovanni
-            XXIII Giovanni XXIII Giovanni XXIII
+            ${senderMetadata.organizationName}<br />
           </mj-text>
           <mj-text
             css-class="text"
@@ -93,7 +92,7 @@
             color="#17324D"
             padding="0"
           >
-            Avviso di pagamento TARI
+            ${senderMetadata.serviceName}
           </mj-text>
           <mj-divider
             border-width="1px"
@@ -113,7 +112,7 @@
             color="#17324D"
             padding="0"
           >
-            Emissione TARI 2023
+            ${subject}
           </mj-text>
           <mj-text
             css-class="text"
@@ -124,10 +123,7 @@
             color="#17324D"
             padding="0px"
           >
-            Buongiorno,<br />
-            su App IO è disponibile l’identificativo unico del versamento per
-            procedere al pagamento in un’unica soluzione del saldo TARI 2023.
-            Anche accedendo al Fas...
+            ${body}
           </mj-text>
         </mj-column>
       </mj-section>
@@ -143,7 +139,7 @@
             align="left"
             inner-padding="14px 24px"
             border-radius="4px"
-            href="#"
+            href="https://continua.io.pagopa.it/?utm_source=email_reminder&utm_medium=email&utm_campaign=nuovo_messaggio"
             css-class="cta"
             padding-left="0px"
             padding-right="0px"
