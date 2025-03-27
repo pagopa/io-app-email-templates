@@ -33,7 +33,7 @@ Steps:
 In order to release a new version:
 
 1. Run [the release action](https://github.com/pagopa/io-app-email-templates/actions/workflows/bump-release.yaml)
-2. A new PR will be created, review, aprove and merge it
+2. A new PR will be created, review, approve and merge it
 3. The [publish action](https://github.com/pagopa/io-app-email-templates/actions/workflows/publish-to-package-registry.yaml) will start and release the new version
 
 You can check here if the new version has been published once the publish action
