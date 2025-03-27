@@ -34,7 +34,7 @@ In order to release a new version:
 
 1. Run [the release action](https://github.com/pagopa/io-app-email-templates/actions/workflows/bump-release.yaml)
 2. A new PR will be created, review, approve and merge it
-3. The [publish action](https://github.com/pagopa/io-app-email-templates/actions/workflows/publish-to-package-registry.yaml) will start and release the new version
+3. The [publish action](https://github.com/pagopa/io-app-email-templates/actions/workflows/publish-to-package-registry.yaml) will start and release both a tag and a new package version in the npm package registry
 
 You can check here if the new version has been published once the publish action
 is completed.
