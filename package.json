@@ -35,6 +35,7 @@
     "generate:walletinstancecreation": "ts-node ./utils/email_generation_script.ts WalletInstanceCreation/",
     "generate:walletinstancerevocation": "ts-node ./utils/email_generation_script.ts WalletInstanceRevocation/",
     "generate:expiredsessionuserreengagement": "ts-node ./utils/email_generation_script.ts ExpiredSessionUserReEngagement/",
+    "generate:itwalletinstancerevocation": "ts-node ./utils/email_generation_script.ts ItWalletInstanceRevocation/",
     "test:watch": "vitest"
   },
   "dependencies": {
