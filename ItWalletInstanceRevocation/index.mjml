@@ -27,7 +27,7 @@
           </mj-text>
           <mj-text css-class="text" font-size="16px" line-height="24px" font-weight="regular" align="left" color="#17324D" padding-top="0px" padding-bottom="0px" padding-left="0px" padding-right="0px">
             <p>
-              Ciao ${name},<br /><br />
+              Ciao,<br /><br />
               alle ore ${revocationTime} del ${revocationDate} hai richiesto di rimuovere dall’app i tuoi documenti digitali. Ti confermiamo che tutti i documenti presenti nel tuo Portafoglio sono stati eliminati e le funzionalità IT-Wallet o Documenti su IO disattivate.<br />
             </p>
             <p>
