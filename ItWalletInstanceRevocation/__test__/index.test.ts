@@ -8,7 +8,7 @@ describe("Snapshot testing", () => {
   });
 
   it("should match snapshot", () => {
-    const htmlOutput: string = apply("Pippo", "10:00", "20/12/2024", {
+    const htmlOutput: string = apply("10:00", "20/12/2024", {
       href: "https://test.test/",
     } as ValidUrl);
 
