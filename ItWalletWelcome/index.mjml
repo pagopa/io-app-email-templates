@@ -1,0 +1,58 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>Novità su IO: i tuoi documenti digitali</mj-title>
+    <mj-font name="Titillium Web" href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css" />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- App IO Logo -->
+      <mj-include path="../partials/main-logo.mjml" />
+      <mj-section css-class="section" padding="0px" padding-bottom="8px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text css-class="title" font-weight="bold" align="left" padding-top="24px" padding-bottom="8px" padding-left="0px" padding-right="0px" color="#17324D">
+            <h1 style="font-size: 32px; line-height: 36px; margin: 0">
+              I tuoi documenti digitali su IO
+            </h1>
+            <br />
+          </mj-text>
+          <mj-text css-class="text" font-size="16px" line-height="24px" font-weight="regular" align="left" color="#17324D" padding-top="0px" padding-bottom="0px" padding-left="0px" padding-right="0px">
+            <p>
+              Ciao,<br /><br />
+              Hai attivato la funzionalità di IO che ti permette di gestire in modo semplice e sicuro <b>i tuoi documenti digitali ufficiali nel portafoglio dell’app!</b><br />
+            </p>
+            <p>
+              Da ora potrai:<br />
+              <ul>
+                <li><strong>aggiungere e consultare i tuoi documenti digitali personali</strong> dalla sezione Portafoglio</li>
+                <li><strong>usare i documenti digitali dal vivo</strong> per le verifiche in prossimità consentite</li>
+                <li><strong>usare i documenti digitali online</strong> per accedere in pochi tocchi ai servizi digitali che li supportano</li>
+              </ul>
+            </p>
+            <p>
+              Se non hai ancora aggiunto documenti, inizia dalla sezione Portafoglio dell’app.
+            </p>
+            <p>
+              Ricorda che in qualsiasi momento puoi <strong><a href="${disableItWalletLink}" class="link">disattivare questa funzionalità</a></strong>.
+            </p>
+            <p><strong>Per saperne di più</strong></p>
+            <p>Per saperne di più sui documenti digitali e altre funzionalità dell’app <strong><a href="${ioWebAppLink}" class="link">visita il sito di IO, l’app dei servizi pubblici</a></strong>.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer -->
+      <mj-include path="../partials/footer-wallet-instance-revocation.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
