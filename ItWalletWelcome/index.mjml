@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>I tuoi documenti digitali su IO</mj-title>
+    <mj-title>Novità su IO: i tuoi documenti digitali</mj-title>
     <mj-font name="Titillium Web" href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css" />
     <mj-attributes>
       <mj-all font-family="Titillium Web, system-ui, sans-serif" />
@@ -45,7 +45,7 @@
               Ricorda che in qualsiasi momento puoi <strong><a href="${disableItWalletLink}" class="link">disattivare questa funzionalità</a></strong>.
             </p>
             <p><strong>Per saperne di più</strong></p>
-            <p>Per saperne di più sui documenti digitali e altre funzionalità dell’app <strong><a href="${ioWebAppLink}" class="link">visita il sito di IO, l’app dei servizi pubblici</a></strong></p>.
+            <p>Per saperne di più sui documenti digitali e altre funzionalità dell’app <strong><a href="${ioWebAppLink}" class="link">visita il sito di IO, l’app dei servizi pubblici</a></strong>.</p>
           </mj-text>
         </mj-column>
       </mj-section>
