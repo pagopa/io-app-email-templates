@@ -572,7 +572,15 @@ p {
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#17324D;"
       ><p style="margin-top: 8px">
               Se non ricordi come accedere a IO con SPID o CIE, trovi tutte le
-              informazioni nel nostro <a href="https://assistenza.ioapp.it/hc/it/articles/32616176301713-Cosa-fare-quando-la-sessione-scade">Centro assistenza</a>.
+              informazioni nel nostro
+              <a
+                href="https://assistenza.ioapp.it/hc/it/articles/32616176301713-Cosa-fare-quando-la-sessione-scade"
+                >Centro assistenza</a
+              >.
+            </p>
+            <p style="margin-top: 8px">
+              Se invece hai fatto un nuovo accesso di recente, ignora pure
+              questa comunicazione.
             </p></div>
     
                 </td>
