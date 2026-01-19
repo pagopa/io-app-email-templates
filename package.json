@@ -25,7 +25,7 @@
     "build": "tsc",
     "postbuild": "dependency-check package.json --no-dev --missing ./dist/**/*.js",
     "test": "vitest run",
-    "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
+    "lint": "eslint . --ext .ts,.tsx --cache",
     "generate": "npm-run-all -p generate:*",
     "generate:mailvalidation": "ts-node ./utils/email_generation_script.ts MailValidation/",
     "generate:messagepreview": "ts-node ./utils/email_generation_script.ts MessagePreview/",
@@ -43,15 +43,16 @@
     "@pagopa/ts-commons": "^13.0.0",
     "fp-ts": "^2.16.5",
     "io-ts": "^2.2.21",
-    "moment-timezone": "^0.5.45"
+    "moment-timezone": "^0.5.45",
+    "prettier": "3.0.0"
   },
   "devDependencies": {
-    "@pagopa/eslint-config": "^3.0.0",
+    "@pagopa/eslint-config": "5.1.2",
     "@types/mjml": "^4.7.4",
     "@types/node": "^18",
     "dependency-check": "^4.1.0",
-    "eslint": "^8.28.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-prettier": "5.5.5",
     "mjml": "^4.15.3",
     "npm-run-all": "^4.1.5",
     "shx": "^0.3.4",
@@ -62,5 +63,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

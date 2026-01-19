@@ -558,8 +558,18 @@ p {
       <div
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:14px;font-weight:regular;line-height:20px;text-align:left;color:#5C6F82;"
       ><p>
-        Ricevi questa comunicazione perché stai confermando l'indirizzo
-        email associato al tuo profilo su IO.
+        Ricevi questa comunicazione perché stai confermando l'indirizzo email
+        associato al tuo profilo su IO.
+      </p>
+      <p>
+        Se vuoi cancellare il tuo profilo su IO e non ricevere più
+        comunicazioni,
+        <a
+          href="https://assistenza.ioapp.it/hc/it/articles/40071331728145-Come-smettere-di-ricevere-alcune-comunicazioni-da-IO"
+          style="color: #0073e6"
+          class="link"
+          >leggi come fare</a
+        >.
       </p>
       <p>
         <strong>
