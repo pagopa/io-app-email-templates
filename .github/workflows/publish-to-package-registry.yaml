@@ -1,3 +1,5 @@
+name: Publish to Package Registry
+
 on:
   workflow_dispatch:
   # on merge on main branch
@@ -13,6 +15,8 @@ jobs:
     environment: prod-cd
     runs-on: ubuntu-latest
     permissions:
+      # Required for OIDC
+      id-token: write
       # contents write permissions required for release
       contents: write
       packages: write
@@ -24,6 +28,10 @@ jobs:
           node-version-file: ".node-version"
           # Defaults to the user or organization that owns the workflow file
           scope: '@pagopa'
+      # Upgrade npm since trusted publishing requires npm CLI version 11.5.1 or later. 
+      - name: Upgrade npm
+        run: npm install -g npm@^11.5.1
+
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - id: get_version
@@ -46,6 +54,4 @@ jobs:
           makeLatest: latest
           generateReleaseNotes: true
           prerelease: false
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm publish 
