@@ -4,7 +4,7 @@
       <mj-image
         width="64px"
         height="64px"
-        src="https://assets.cdn.io.italia.it/logos/organizations/82003830161.png"
+        src="https://assets.io.pagopa.it/logos/organizations/82003830161.png"
         alt=" Logo ${senderOrganizationName}"
         align="left"
         border-radius="8px"
