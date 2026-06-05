@@ -40,11 +40,11 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@pagopa/ts-commons": "^13.0.0",
+    "@pagopa/ts-commons": "^14.0.0",
     "fp-ts": "^2.16.5",
     "io-ts": "^2.2.21",
-    "moment-timezone": "^0.5.45",
-    "prettier": "3.0.0"
+    "moment-timezone": "^0.6.0",
+    "prettier": "^3.8.3"
   },
   "devDependencies": {
     "@pagopa/eslint-config": "5.1.2",
@@ -58,7 +58,7 @@
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.4",
-    "vitest": "^1.4.0"
+    "vitest": "^4.1.0"
   },
   "publishConfig": {
     "access": "public",

@@ -230,7 +230,7 @@ p {
     
     
       <div
-         class="mail-body" style="" lang="it" dir="auto"
+         aria-label="Messaggio da IO: Documenti su IO disattivato" aria-roledescription="email" class="mail-body" style="" role="article" lang="it" dir="auto"
       >
         
       
