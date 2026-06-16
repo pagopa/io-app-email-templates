@@ -230,7 +230,7 @@ p {
     
     
       <div
-         class="mail-body" style="" lang="it" dir="auto"
+         aria-label="I tuoi accessi a servizi di terze parti" aria-roledescription="email" class="mail-body" style="" role="article" lang="it" dir="auto"
       >
         
       

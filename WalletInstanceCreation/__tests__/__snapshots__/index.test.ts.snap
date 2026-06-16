@@ -230,7 +230,7 @@ p {
     
     
       <div
-         class="mail-body" style="" lang="it" dir="auto"
+         aria-label="Documenti su IO - Aggiungi la versione digitale dei tuoi documenti al Portafoglio" aria-roledescription="email" class="mail-body" style="" role="article" lang="it" dir="auto"
       >
         
       
