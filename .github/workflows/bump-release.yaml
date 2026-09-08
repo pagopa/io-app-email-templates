@@ -47,7 +47,7 @@ jobs:
 
       - name: Bump Package Version
         id: bump
-        uses: pagopa/github-actions-template/bump-semver@main
+        uses: pagopa/github-actions-template/bump-semver@8e05805024deadaacb52fc78c5a52293215841dc # main
         with:
           semver: ${{ inputs.semver  }}
           current_version: ${{ env.version }}
