@@ -1,7 +1,10 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Novità su IO: i tuoi documenti digitali</mj-title>
-    <mj-font name="Titillium Web" href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css" />
+    <mj-title>Ottieni il meglio del tuo portafoglio digitale su IO</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
     <mj-attributes>
       <mj-all font-family="Titillium Web, system-ui, sans-serif" />
     </mj-attributes>
@@ -18,34 +21,104 @@
       <mj-include path="../partials/main-logo.mjml" />
       <mj-section css-class="section" padding="0px" padding-bottom="8px">
         <mj-column>
-          <!-- Title & Main Message -->
-          <mj-text css-class="title" font-weight="bold" align="left" padding-top="24px" padding-bottom="8px" padding-left="0px" padding-right="0px" color="#17324D">
+          <!-- Title -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            padding-top="24px"
+            padding-bottom="8px"
+            padding-left="0px"
+            padding-right="0px"
+            color="#17324D"
+          >
             <h1 style="font-size: 32px; line-height: 36px; margin: 0">
-              I tuoi documenti digitali su IO
+              Ottieni il meglio del tuo portafoglio digitale su IO
             </h1>
-            <br />
           </mj-text>
-          <mj-text css-class="text" font-size="16px" line-height="24px" font-weight="regular" align="left" color="#17324D" padding-top="0px" padding-bottom="0px" padding-left="0px" padding-right="0px">
+          <!-- Body -->
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <p>Ciao,</p>
             <p>
-              Ciao,<br /><br />
-              Hai attivato la funzionalità di IO che ti permette di gestire in modo semplice e sicuro <b>i tuoi documenti digitali ufficiali nel portafoglio dell’app!</b><br />
+              il portafoglio di IO ti permette ora di gestire in modo semplice,
+              sicuro e digitale i tuoi documenti personali ufficiali,
+              direttamente in app.
             </p>
             <p>
-              Da ora potrai:<br />
-              <ul>
-                <li><strong>aggiungere e consultare i tuoi documenti digitali personali</strong> dalla sezione Portafoglio</li>
-                <li><strong>usare i documenti digitali dal vivo</strong> per le verifiche in prossimità consentite</li>
-                <li><strong>usare i documenti digitali online</strong> per accedere in pochi tocchi ai servizi digitali che li supportano</li>
-              </ul>
+              <strong
+                >Hai già attivato la funzionalità di portafoglio
+                digitale?</strong
+              >
             </p>
             <p>
-              Se non hai ancora aggiunto documenti, inizia dalla sezione Portafoglio dell’app.
+              Perfetto! Inizia o continua ad aggiungere i documenti digitali
+              disponibili, se non l’hai ancora fatto.
             </p>
             <p>
-              Ricorda che in qualsiasi momento puoi <strong><a href="${disableItWalletLink}" class="link">disattivare questa funzionalità</a></strong>.
+              <strong
+                >Devi ancora attivarla o qualcosa non ha funzionato?</strong
+              >
             </p>
-            <p><strong>Per saperne di più</strong></p>
-            <p>Per saperne di più sui documenti digitali e altre funzionalità dell’app <strong><a href="${ioWebAppLink}" class="link">visita il sito di IO, l’app dei servizi pubblici</a></strong>.</p>
+            <p>
+              Apri l’app IO e segui le istruzioni per attivare la funzionalità.
+            </p>
+            <p>
+              Assicurati che l’app sia aggiornata all’ultima versione
+              disponibile e ricorda: per attivare il portafoglio IT-Wallet avrai
+              bisogno della tua CIE (Carta di Identità Elettronica).
+            </p>
+            <p>
+              Se hai problemi con l’attivazione o con l’aggiunta dei documenti,
+              consulta il
+              <strong
+                ><a href="${helpCenterLink}" class="link"
+                  >Centro assistenza di IO</a
+                ></strong
+              >: troverai una risposta alle domande più frequenti.
+            </p>
+            <p>Con il tuo portafoglio digitale su IO puoi:</p>
+            <ul>
+              <li>
+                <strong>aggiungere e portare sempre con te</strong> i documenti
+                digitali disponibili
+              </li>
+              <li>
+                <strong>usarli dal vivo</strong> per le verifiche consentite
+              </li>
+              <li>
+                <strong>usarli online</strong> per accedere in pochi tocchi ai
+                servizi digitali abilitati
+              </li>
+            </ul>
+            <p>
+              Ricorda che in qualsiasi momento puoi
+              <strong
+                ><a href="${disableItWalletLink}" class="link"
+                  >disattivare questa funzionalità</a
+                ></strong
+              >.
+            </p>
+            <p>
+              <strong>Per saperne di più</strong><br />
+              Per saperne di più sui documenti digitali e altre funzionalità
+              dell’app
+              <strong
+                ><a href="${ioWebAppLink}" class="link"
+                  >visita il sito di IO, l’app dei servizi pubblici</a
+                ></strong
+              >.
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>

@@ -4,7 +4,7 @@ exports[`Snapshot testing > should match snapshot 1`] = `
 "<!doctype html>
 <html lang="it" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
-    <title>Novità su IO: i tuoi documenti digitali</title>
+    <title>Ottieni il meglio del tuo portafoglio digitale su IO</title>
     <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<![endif]-->
@@ -230,7 +230,7 @@ p {
     
     
       <div
-         aria-label="Novità su IO: i tuoi documenti digitali" aria-roledescription="email" class="mail-body" style="" role="article" lang="it" dir="auto"
+         aria-label="Ottieni il meglio del tuo portafoglio digitale su IO" aria-roledescription="email" class="mail-body" style="" role="article" lang="it" dir="auto"
       >
         
       
@@ -345,7 +345,7 @@ p {
          border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
       >
         <tbody>
-          <!-- Title & Main Message -->
+          <!-- Title -->
               <tr>
                 <td
                    align="left" class="title" style="font-size:0px;padding:10px 25px;padding-top:24px;padding-right:0px;padding-bottom:8px;padding-left:0px;word-break:break-word;"
@@ -354,13 +354,12 @@ p {
       <div
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:13px;font-weight:bold;line-height:1;text-align:left;color:#17324D;"
       ><h1 style="font-size: 32px; line-height: 36px; margin: 0">
-              I tuoi documenti digitali su IO
-            </h1>
-            <br /></div>
+              Ottieni il meglio del tuo portafoglio digitale su IO
+            </h1></div>
     
                 </td>
               </tr>
-            
+            <!-- Body -->
               <tr>
                 <td
                    align="left" class="text" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;"
@@ -368,26 +367,76 @@ p {
                   
       <div
          style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#17324D;"
-      ><p>
-              Ciao,<br /><br />
-              Hai attivato la funzionalità di IO che ti permette di gestire in modo semplice e sicuro <b>i tuoi documenti digitali ufficiali nel portafoglio dell’app!</b><br />
+      ><p>Ciao,</p>
+            <p>
+              il portafoglio di IO ti permette ora di gestire in modo semplice,
+              sicuro e digitale i tuoi documenti personali ufficiali,
+              direttamente in app.
             </p>
             <p>
-              Da ora potrai:<br />
-              <ul>
-                <li><strong>aggiungere e consultare i tuoi documenti digitali personali</strong> dalla sezione Portafoglio</li>
-                <li><strong>usare i documenti digitali dal vivo</strong> per le verifiche in prossimità consentite</li>
-                <li><strong>usare i documenti digitali online</strong> per accedere in pochi tocchi ai servizi digitali che li supportano</li>
-              </ul>
+              <strong
+                >Hai già attivato la funzionalità di portafoglio
+                digitale?</strong
+              >
             </p>
             <p>
-              Se non hai ancora aggiunto documenti, inizia dalla sezione Portafoglio dell’app.
+              Perfetto! Inizia o continua ad aggiungere i documenti digitali
+              disponibili, se non l’hai ancora fatto.
             </p>
             <p>
-              Ricorda che in qualsiasi momento puoi <strong><a href="https://test.test/" class="link">disattivare questa funzionalità</a></strong>.
+              <strong
+                >Devi ancora attivarla o qualcosa non ha funzionato?</strong
+              >
             </p>
-            <p><strong>Per saperne di più</strong></p>
-            <p>Per saperne di più sui documenti digitali e altre funzionalità dell’app <strong><a href="https://test.test/" class="link">visita il sito di IO, l’app dei servizi pubblici</a></strong>.</p></div>
+            <p>
+              Apri l’app IO e segui le istruzioni per attivare la funzionalità.
+            </p>
+            <p>
+              Assicurati che l’app sia aggiornata all’ultima versione
+              disponibile e ricorda: per attivare il portafoglio IT-Wallet avrai
+              bisogno della tua CIE (Carta di Identità Elettronica).
+            </p>
+            <p>
+              Se hai problemi con l’attivazione o con l’aggiunta dei documenti,
+              consulta il
+              <strong
+                ><a href="https://test.test/help-center" class="link"
+                  >Centro assistenza di IO</a
+                ></strong
+              >: troverai una risposta alle domande più frequenti.
+            </p>
+            <p>Con il tuo portafoglio digitale su IO puoi:</p>
+            <ul>
+              <li>
+                <strong>aggiungere e portare sempre con te</strong> i documenti
+                digitali disponibili
+              </li>
+              <li>
+                <strong>usarli dal vivo</strong> per le verifiche consentite
+              </li>
+              <li>
+                <strong>usarli online</strong> per accedere in pochi tocchi ai
+                servizi digitali abilitati
+              </li>
+            </ul>
+            <p>
+              Ricorda che in qualsiasi momento puoi
+              <strong
+                ><a href="https://test.test/disable-it-wallet" class="link"
+                  >disattivare questa funzionalità</a
+                ></strong
+              >.
+            </p>
+            <p>
+              <strong>Per saperne di più</strong><br />
+              Per saperne di più sui documenti digitali e altre funzionalità
+              dell’app
+              <strong
+                ><a href="https://test.test/io-web-app" class="link"
+                  >visita il sito di IO, l’app dei servizi pubblici</a
+                ></strong
+              >.
+            </p></div>
     
                 </td>
               </tr>
