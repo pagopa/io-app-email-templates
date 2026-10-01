@@ -1,0 +1,91 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>{{title}}</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- PagoPA Logo -->
+      <mj-include path="../partials/pagopa-logo.mjml" />
+      <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            padding-top="24px"
+            padding-bottom="0px"
+            color="#17324D"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 40px; margin: 0">
+              Opportunità approvata
+            </h1>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding-top="4px"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <!-- Body 1 Desktop (from MUI Italia)-->
+            <p>Ciao,</p>
+
+            <p>
+              abbiamo <strong>approvato</strong> l&rsquo;opportunità <strong>{{opportunityName}}</strong>.
+            </p>
+
+            <p>
+              L&rsquo;opportunità sarà disponibile su IO dal <span class="semibold">{{availabilityDate}}</span>.
+            </p>
+
+            <p>
+              Per consultare o gestire le tue opportunità, accedi ad
+              <a href="#">Area Riservata</a>
+              e seleziona il prodotto Carta Europea della Disabilità.
+            </p>
+
+            <p>
+              Se hai bisogno di supporto con le opportunità, consulta il
+              <a href="#">manuale operativo</a>.
+            </p>
+
+            <p>
+              Per problemi tecnici nell&rsquo;uso della piattaforma
+              <a href="#">vai nel portale</a>
+              e apri una richiesta.
+            </p>
+
+            <p>A presto,</p>
+
+            <p>Il Dipartimento per le politiche in favore delle persone con disabilità.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer -->
+      <mj-include path="../partials/footer-ced.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
